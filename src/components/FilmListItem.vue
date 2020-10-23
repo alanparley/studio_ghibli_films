@@ -1,23 +1,20 @@
 <template>
-<li @click="handleClick">
+<li v-on:click="handleClick">
     <span>{{film.title}}</span>
 </li>
 </template>
 
 <script>
-import { eventBus } from "@/main.js"
+import { eventBus } from "@/main.js";
 
 export default {
     name: 'film-list-item',
     props: ["film"],
     methods: {
-        handleClick: function(event) {
-            eventBus.$emit("film-selected", this.film)
-            
-
+        handleClick: function (event) {
+            eventBus.$emit("film-selected", this.film);
         },
     },
-
 };
 </script>
 
