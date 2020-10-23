@@ -1,9 +1,13 @@
 <template>
+<main>
   <film-list :films="films"></film-list>
+  <film-detail :film="selectedFilm"></film-detail>
+  </main>
 </template>
 
 <script>
 import FilmList from '@/components/FilmList.vue';
+import FilmDetail from '@/components/FilmDetails';
 import { eventBus } from '@/main.js';
 
 
@@ -28,6 +32,7 @@ export default {
   },
   components: {
     FilmList,
+    FilmDetail,
   }
 
 }
