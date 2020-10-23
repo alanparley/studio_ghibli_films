@@ -2,6 +2,7 @@
   <article>
       <h1>{{film.title}}</h1>
       <div>
+          
     <dl>
         <dt> Release Date:</dt>
         <dd> {{film.release_date}}</dd>
@@ -12,7 +13,10 @@
          </dl>
 </div>
     <p>{{film.description}}</p>
-  </article>
+    
+</article>
+
+
 </template>
 
 <script>
