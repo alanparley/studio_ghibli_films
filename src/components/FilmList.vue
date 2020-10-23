@@ -24,5 +24,7 @@ export default {
 ul {
     list-style-type:none;
     padding: 10px;
+    height: 100vh;
+    overflow-y: auto;
 }
 </style>

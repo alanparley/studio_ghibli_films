@@ -1,8 +1,17 @@
 <template>
   <article>
       <h1>{{film.title}}</h1>
-      <h2>{{film.release_date}}</h2>
-      <h3>{{film.director}}</h3>
+      <div>
+    <dl>
+        <dt> Release Date:</dt>
+        <dd> {{film.release_date}}</dd>
+         <dt> Directed by: </dt>
+         <dd>{{film.director}}</dd>
+         <dt>Rotten Tomatoes Score:</dt>
+         <dd>{{film.rt_score}}%</dd>
+         </dl>
+</div>
+    <p>{{film.description}}</p>
   </article>
 </template>
 

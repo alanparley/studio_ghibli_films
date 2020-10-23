@@ -38,6 +38,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+main {
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 9fr 13fr;
 
+}
 </style>
