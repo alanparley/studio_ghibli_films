@@ -20,11 +20,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 ul {
     list-style-type:none;
-    padding: 10px;
-    height: 50vh;
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    margin: 10px;
     overflow-y: auto;
 }
 </style>
